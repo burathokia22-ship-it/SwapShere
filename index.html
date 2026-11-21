@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SwapSphere</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>SwapSphere 🚀</h2>
+  <div>
+    <a onclick="showHome()">Home</a>
+    <a onclick="showLogin()">Login</a>
+    <a onclick="showRegister()">Register</a>
+    <a onclick="showContact()">Contact</a>
+    <a onclick="logoutUser()">Logout</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="homeSection">
+  <h1>Smart Student Marketplace</h1>
+  <p>Buy, Sell & Exchange items easily</p>
+  <button class="start-btn">Get Started</button>
+</section>
+
+<!-- SEARCH -->
+<div class="search-box" id="searchSection">
+  <input type="text" id="search" placeholder="Search items...">
+  <button onclick="searchItems()">Search</button>
+</div> 
+<!-- <div class="search-box" id="searchSection"></div>
+<p id="noResult" style="display:none;">No items found 😢</p> -->
+
+<!-- FEATURED ITEMS -->
+<section class="items" id="itemsSection">
+
+  <div class="card product">
+    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" alt="Book">
+    <h3>Book</h3>
+    <p>₹800</p>
+    <button class="btn">Buy</button>
+  </div>
+
+  <div class="card product">
+    <img src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620" alt="Calculator">
+    <h3>Calculator</h3>
+    <p>₹500</p>
+    <button class="btn">Buy</button>
+  </div>
+
+   <div class="card product">
+    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+    <h3>Laptop</h3>
+    <p>₹25000</p>
+    <button class="btn">Buy</button>
+  </div>
+
+</section>
+
+<!-- LOGIN -->
+<div id="loginSection" style="display:none;">
+  <h2>Login</h2>
+  <input type="text" id="loginUser" placeholder="Username">
+  <input type="password" id="loginPass" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<!-- REGISTER -->
+<div id="registerSection" style="display:none;">
+  <h2>Register</h2>
+  <input type="text" id="regUser" placeholder="Username">
+  <input type="password" id="regPass" placeholder="Password">
+  <button onclick="register()">Register</button>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" style="display:none;">
+  <h2 id="userName"></h2>
+
+  <input id="itemName" placeholder="Item Name">
+  <input id="itemPrice" placeholder="Price">
+  <input id="itemImage" placeholder="Image URL">
+  <button onclick="addItem()">Add Item</button>
+
+  <div id="itemsContainer"></div>
+</div>
+
+<!-- CONTACT -->
+<section id="contactSection" style="display:none;">
+  <h2>Contact Us</h2>
+  <input placeholder="Your Name">
+  <input placeholder="Your Email">
+  <textarea placeholder="Message"></textarea>
+  <button>Send</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+  <p>© 2026 SwapSphere | Made by Anusha Burathoki</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
